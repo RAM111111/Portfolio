@@ -26,11 +26,12 @@ html{
     width: 100%;
     position: fixed;
     z-index: 100%;
+    background-color: black;
 
 }
 
 .nav-bar{
-    background-color: black;
+    
     left: 0;
     top: 0;
     padding: 1rem 5rem;
@@ -59,6 +60,7 @@ html{
     height: 70px;
     width: 70px;
     transition: .3s ease transform;
+    cursor: pointer;
 
 }
 .bar{
@@ -82,11 +84,28 @@ html{
 
 
 }
+.active{
+    transform: rotate(360deg);
+}
+
 .bar::before{
     top: 8px;
 }
 .bar::after{
+    
     bottom: 8px;
+}
+.active .bar::before{
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.active .bar::after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+.active .bar{
+    background-color: transparent;
 }
 
 .nav-list ul{
@@ -99,6 +118,8 @@ html{
     transform: translateY(-100%);
     transition: .3s ease transform;
     text-align: center;
+    z-index: -1;
+
 
 
 
@@ -131,11 +152,11 @@ html{
     color: white;
     display: block;
     letter-spacing: .15rem;
-    padding: 2rem 0;
+    padding: 2rem 3rem;
 
 }
 .open ul{
-    transform: translateY(90px);
+    transform: translateY(100px);
 }
 .hero{
     min-width: 80vh;
@@ -193,7 +214,7 @@ width: 25%;
 /*  */
 .about{
     width: 100%;
-    min-width: 50vh;
+    min-height: 50vh;
     padding: 10rem 5rem;
     flex-direction: column;
 }
@@ -433,6 +454,24 @@ margin-bottom: 10px;
 
 
 @media only screen and (min-width:768px){
+    .humburger{
+        display: none;
+    }
+    .nav-bar{
+        width: 80%;
+    }
+
+    .nav-list ul{
+        transform: translateX(0);
+        position: initial;
+        padding: 0;
+    z-index: initial;
+    background-color: transparent;
+    }
+
+    .nav-list ul li{
+        display: inline-block;
+    }
     .hero{
         height: 100vh;
         flex-direction: row;
