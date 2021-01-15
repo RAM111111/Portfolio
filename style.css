@@ -9,6 +9,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -25,13 +26,13 @@ html{
     height: auto;
     width: 100%;
     position: fixed;
-    z-index: 100%;
+    z-index: 100;
     background-color: black;
 
 }
 
 .nav-bar{
-    
+    background-color: black;
     left: 0;
     top: 0;
     padding: 1rem 5rem;
@@ -129,7 +130,7 @@ html{
     list-style: none;
     display: block;
     position: relative;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
 }
 .nav-list ul li::after{
     content: '';
@@ -156,7 +157,7 @@ html{
 
 }
 .open ul{
-    transform: translateY(100px);
+    transform: translateY(90px);
 }
 .hero{
     min-width: 80vh;
@@ -196,6 +197,7 @@ html{
     text-decoration: none;
     letter-spacing: .6rem;
     background-color: rgba(84, 84, 84, .5);
+    margin-bottom: 30px;
 }
 
 
@@ -204,6 +206,7 @@ html{
     width: 80%;
     margin-bottom: 3rem;
     text-align: center;
+    padding: 15px;
     
 }
 
@@ -217,6 +220,7 @@ width: 25%;
     min-height: 50vh;
     padding: 10rem 5rem;
     flex-direction: column;
+
 }
 
 .about-info{
@@ -247,16 +251,19 @@ width: 25%;
 
 }
 .about-img-wrapper{
-margin-top: 30px;
+margin-top: 50px;
 height: auto;
 width: 400px;
 position: relative;
 display:  inline-block;
-text-align: center;
+/* text-align: center; */
 }
 .about-img-wrapper img {
    
     width: 100%;
+    display: block;
+    z-index:initial;
+
     
 }
 
@@ -266,7 +273,7 @@ text-align: center;
     right: -5rem;
     top: 50%;
     transform: translateY(-50%);
-    width: 30%;
+    width: 70%;
     height: 120%;
     background-color: rgba(34, 33, 33, .15);
     z-index: -1;
@@ -279,8 +286,10 @@ text-align: center;
     flex-direction: column;
     min-height: 60vh;
     padding: 10rem 5rem;
-    
-
+}
+.services-header {
+	width: 100%;
+	text-align: center;
 }
 
 .services-header-heading{
@@ -288,9 +297,10 @@ text-align: center;
     text-transform: uppercase;
     letter-spacing: 2rem;
     color: black;
-    text-align: center;
+    /* text-align: center; */
 
 }
+
 
 .services-header-desc{
 font-size: 1.3rem;
@@ -360,12 +370,14 @@ margin-top: 20px;
 .services-back-desc{
     font-size: 1.3rem;
     margin-top: 10px;
+    text-align: center;
 }
 
 .service:nth-child(2) .card-front{
     background-image: url(oo.png);
     background-size: cover;
     position: relative;
+    /* color: white; */
 }
 
 .service:nth-child(2) .card-front::after{
@@ -373,7 +385,9 @@ margin-top: 20px;
     position: absolute;
     left: 0;
     top: 0;
-    background-color:black;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, .14);
     z-index: -1;
 }
 
@@ -392,6 +406,7 @@ margin-top: 20px;
 .hire-heading{
     font-size: 2.2rem;
     text-align: center;
+    color: black;
 }
 .hire-button{
     padding: 2rem 3rem;
@@ -505,6 +520,11 @@ margin-bottom: 10px;
         flex-direction: row;
         width: 80%;
     }
+    .services-header-desc {
+		max-width: 500px;
+		padding-top: 20px;
+		margin: 0 auto;
+	}
     .service{
         margin: 0;
     }
