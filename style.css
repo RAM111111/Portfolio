@@ -117,11 +117,9 @@ html{
     transform: translateY(-100%);
     transition: .3s ease transform;
     text-align: center;
-}
-
-.active .bar ul{
     z-index: -1;
 }
+
 
 .nav-list ul li{
     list-style: none;
@@ -202,13 +200,12 @@ html{
     width: 50%;
     margin-bottom: 3rem;
     text-align: center;
-    /* padding: 15px; */
+    padding: 15px;
     
 }
 
 .hero-img img{
 width: 60%;
-height: 60%;
   
 }
 /*  */
@@ -370,14 +367,6 @@ margin-top: 20px;
     margin-top: 10px;
     text-align: center;
 }
-/* .service:nth-child(2)  i,
-.service:nth-child(2)  h1,
-.service:nth-child(2)  p
-{
-color: white;
-} */
-
-
 
 .service:nth-child(2) .card-front{
     background-image: url(oo.png);
@@ -393,11 +382,7 @@ color: white;
     height: 100%;
     width: 100%;
     background-color:rgba(0, 0, 0, 0.05);
-    /* z-index: ; */
 }
-
-
-
 /*  */
 
 /*  */
