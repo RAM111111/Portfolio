@@ -1,6 +1,6 @@
 # Ramia Portfolio
 # In Tap
-![](vid3.mov);
+![](vid3.mov)
 # In Desctop
-![](vid2.mov);
+![](vid2.mov)
 
