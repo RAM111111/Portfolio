@@ -47,6 +47,13 @@ html{
     color: white;
     text-decoration: none;
 }
+.brand{
+    width: 20%;
+}
+
+.brand .img{
+    height:5rem;
+}
 
 .nav-list{
     display: flex;
@@ -119,6 +126,8 @@ html{
     text-align: center;
     z-index: -1;
 }
+
+
 
 
 .nav-list ul li{
@@ -206,6 +215,7 @@ html{
 
 .hero-img img{
 width: 60%;
+border-radius: 50%;
   
 }
 /*  */
@@ -472,6 +482,7 @@ margin-bottom: 10px;
         transform: translateX(0);
         position: initial;
         padding: 0;
+        z-index: initial;
     background-color: transparent;
     }
 
