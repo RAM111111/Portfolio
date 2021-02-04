@@ -185,7 +185,7 @@ html{
 }
 .hero-info-subheading{
     letter-spacing: .5rem;
-    color: floralwhite;
+    color: white;
     font-size: 1.6rem;
     text-transform: uppercase;
 }
@@ -316,6 +316,7 @@ margin-top: 20px;
     justify-content: center;
     width: 100%;
     flex-direction: column;
+    
 }
 
 .service{
@@ -380,8 +381,10 @@ margin-top: 20px;
 
 .service:nth-child(2) .card-front{
     background-image: url(oo.png);
+    
     background-size:cover;
     position: relative;
+    z-index: 0;
 }
 
 .service:nth-child(2) .card-front::after{
@@ -461,7 +464,20 @@ margin-bottom: 10px;
     letter-spacing: .2rem;
 }
 .footer-social-icon a{
-    color: white;
+    color: lightgrey;
+    font-size: 3rem;
+    margin: .4rem;
+    display: inline-block;
+}
+
+.footer-social-icon a:nth-child(1):hover{
+    color: blue;
+    font-size: 3rem;
+    margin: .4rem;
+    display: inline-block;
+}
+.footer-social-icon a:nth-child(2):hover{
+    color: rgb(255, 255, 255);
     font-size: 3rem;
     margin: .4rem;
     display: inline-block;
@@ -542,6 +558,10 @@ margin-bottom: 10px;
 @media only screen and (min-width:1200px){
     .hero-info-heading{
         font-size: 6rem;
+    }
+
+    .about-info ,.about-img{
+        margin-top: 2rem;
     }
     .hero-info-subheading{
         letter-spacing: .8rem;
